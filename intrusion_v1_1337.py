@@ -20,7 +20,7 @@ if (sys.version_info > (3, 0)):
 else:
     from Tkinter import *
     from tkFont import Font
-    from tkk import Progressbar
+    from ttk import Progressbar
 
 
 class FancyProgressBar(object):
