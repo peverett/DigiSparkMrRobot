@@ -12,10 +12,16 @@ __version__ = "1.0"
 __author__ = "simon.peverett@gmail.com"
 __all__ = ['__version__', '__author__']
 
-from tkinter.font import Font
-from tkinter import *
-from tkinter.ttk import Progressbar
-#    from tkinter import messagebox, filedialog
+import sys
+if (sys.version_info > (3, 0)):
+    from tkinter import *
+    from tkinter.font import Font
+    from tkinter.ttk import Progressbar
+else:
+    from Tkinter import *
+    from tkFont import Font
+    from tkk import Progressbar
+
 
 class FancyProgressBar(object):
     def __init__(self, parent):
